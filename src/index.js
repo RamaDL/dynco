@@ -1,6 +1,7 @@
 import React from 'react'
-import styles from './styles.module.css'
+import RenderDynForm from './components/RenderDynForm/RenderDynForm.jsx'
+import {formJSON} from './data/form'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const DynForm = (props) => {
+  return <RenderDynForm formJSON={formJSON}/>
 }

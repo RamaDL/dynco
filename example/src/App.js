@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'dynco'
+import { DynForm } from 'dynco'
 import 'dynco/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <DynForm/>
 }
 
 export default App
