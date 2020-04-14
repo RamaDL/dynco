@@ -1,6 +1,7 @@
 import React from "react";
+import DynFieldsetContainer from '../DynFieldset/DynFiedlsetContainer'
 
-const RenderDynForm = props => {
+const DynFormRender = props => {
   
   const {formJSON} = props;
   console.log(formJSON.action);
@@ -11,15 +12,16 @@ const RenderDynForm = props => {
       id={formJSON.id}
       action={formJSON.action}
       autocomplete={formJSON.autocomplete}
-      className={formJSON.className}
+      className={formJSON.class}
       encType={formJSON.enctype}
       method={formJSON.method}
       name={formJSON.name}
       target={formJSON.target}
     >
-        
+        {console.log(formJSON.fieldsets)}
+        <DynFieldsetContainer fieldsets={formJSON.fieldsets}/>
     </form>
   );
 };
 
-export default RenderDynForm;
+export default DynFormRender;

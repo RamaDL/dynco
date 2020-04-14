@@ -1,7 +1,7 @@
 import React from 'react'
-import RenderDynForm from './components/RenderDynForm/RenderDynForm.jsx'
+import DynFormRender from './components/DynForm/DynFormRender.jsx'
 import {formJSON} from './data/form'
 
 export const DynForm = (props) => {
-  return <RenderDynForm formJSON={formJSON}/>
+  return <DynFormRender formJSON={formJSON}/>
 }
